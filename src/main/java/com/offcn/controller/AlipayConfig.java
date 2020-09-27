@@ -1,0 +1,73 @@
+package com.offcn.controller;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+/* *
+ *???AlipayConfig
+ *????????
+ *????????????????
+ *?????2017-04-05
+ *???
+ *?????????????????????????????????????????????,???????????
+ *???????????????????????????
+ */
+
+public class AlipayConfig {
+	
+//?????????????????????????????????????
+
+	// ??ID,??APPID?????????APPID???????
+	public static String app_id ="2016102300741725";
+			
+	
+	// ???????PKCS8??RSA2??
+    public static String merchant_private_key = "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCZJOQMFgb8V5meWBjo8KbQ8G2klcbqTn+Lav+n0Ewmv6T49O0blgpawm5vTPT3Kstkz+fb42erF7c4FLU0QeoQYHbyK0kAOHKiKg9C8sNFmsH9nNq1/OlOCEA7UszufHyextgP3RbQnV3CVLfRPg+Xnz2uPAkdivpW4n7aPJabtv3wzWEpRwUT8hY6CprUzsPyOBvCHHKApoM4kEeZqM9W3TOt7NKo9lYKk8c6vixs4LESmp3ikiOV+ko6PmwAxN+AJj7D46rJE1PmIdI/SL6VzmRW/epDcVClVMEGh6Zn4jiV9qDTMmaANpGwfiQ2nKNJiGA0vWnbyqEheRwLPtK3AgMBAAECggEALPbB5jKJdomZ1v3ywmH1+J6+8nXvY1gM5rhRu8nSsgXOwDHZdCIHhEJV/mPQAMoV0dGhN9R62acq6lJaKa+4s3o/Mjc3RdNNBQPoWzW/063uizIEnS5WqcyOX1yeQt9WD6A+S9oUGsg5gRcyqULZfSEKESAbZQsrGVuC9zyW07zfyJVThHUDel7Y0p9Y778VQ5kAJn+i/bOcunfz7kGhEgJU6Wd/9iOPC6sx8mKJI7uOlFVbMlc8AaMgYNtpJ6nXcnAXj1gaA0/wQDKtoOya1l/FYOi/OFS8QjEyFpJcySPJ2fWY8bOkvRRW8Nv5a3nzHDdqa+AujDCpceZf0pHcoQKBgQDbp+SPqZSBWHRY6bPO853oDElnuLVcHjtFHC5D/C2p1yJeJGpPMhrkSL/5NQ0609VFXgAWMzXkpud4LVwK0Ozujb8YXUvtRnVdz5YISSixxOaOAaqS/UxybtXd5/cuXcPZ31fNO8vbqYRfERPoj6kHgU2kL8uDGgwJWbkAEcsf7wKBgQCye7eC9Boul/AdCBF163YiS4vvnqcB/AxTE8d+VKIHyDgfAbHbwYbkvhlWedt4a1k/DtVyiQnVtmHmkM/VWFrd3Wo8krbNB99zVRBGVaxOcjKwrFwzJugBsjt1JlP4RbbFIfdeEjenAeTVWBeVW0kX/Pyszwc1ih3h9QpZvygxuQKBgBr75h0r9P1q02g01Yz/6o8eK0pdq5H0eM2Fp71cVnO95Q/xo0m1Ww5eTY8c0FJAwbtyz8nqYp2DT344/Eyr2992dFpW48PzWum6XbEI48Hq8XPSipTiHykTqpxHKdt9U1kJkey5gtKqYYOYQnzYYSh13wbjhDnH0mC3r/1tMinrAoGASeIOuCXGBM2edtYVLEQZNd8iAUIijh7BF07TwQbVv/Twzl0MPBTjeyL6KCLvZ+zAF+tTDkOOD6qc4i3F6uHVU4xJYuO0yjDdHcfzobnrRtndA+eFjyMm3TTjif4gumBZZUdHN+jAouCU0n/R22DbZBO0oPBeYppW/mdKLpaD0/kCgYAvEorSrQjy67aHaRjmSd61nA+q/3beUbHmuo9hgXKUfXTWwTSFXS89RDV/Kggljmty9u4fid/Ydy/AkACIcW60klVK2JiHKhHr2eRfspzDHkuCMBrFBPPeeHm8I8kB7ypM5XmIYX5godmQKxc76NeUZHxyXKMW3F/zPfVfmmqbkg==";
+	
+	// ?????,?????https://openhome.alipay.com/platform/keyManage.htm ??APPID????????
+    public static String alipay_public_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnO6vmEsJqGnVOUa4f2X2vz7NwyZNvVW2r+1MQsHHSIRHXeF1t11R/ZJNmBqfbshO9umob/04LjslJF1PjqMmaTvZU6u3UvrKcO4ITwT5bYYBmF2FH11f6LhTVBwMRKb8tjHbiREfHNjNDp2WusY7CF9XPR38yEDG+p97HqxmKbY5aj/lGIIMb9Bh91edCnH7N/3ri+jcfjRJMspotrXXDa4+wFJaFzGNpCuJrYz1QNsWZ8E/gU6IqPFwW2qTbMeAxJnwppnzlEkigef4V4GfvZvSp3TmNcStog42YtbxHN7ww3bWJ4bnr/CpOvtQtJmZh+2oOu4J6S4uhQi/1CYxxQIDAQAB";
+
+	// ???????????  ?http://????????????id=123??????????????????
+	public static String notify_url = "http://localhost:8080/LLxiaomi/alipay/notify_url.jsp";
+
+	// ???????????? ?http://????????????id=123??????????????????
+	public static String return_url = "http://localhost:8080/LLxiaomi/alipay/return_url.jsp";
+
+	// ????
+	public static String sign_type = "RSA2";
+	
+	// ??????
+	public static String charset = "utf-8";
+	
+	// ?????
+	public static String gatewayUrl = "https://openapi.alipaydev.com/gateway.do";
+	
+	// ?????
+	public static String log_path = "C:\\";
+
+
+//?????????????????????????????????????
+
+    /** 
+     * ?????????????????????????????
+     * @param sWord ???????????
+     */
+    public static void logResult(String sWord) {
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter(log_path + "alipay_log_" + System.currentTimeMillis()+".txt");
+            writer.write(sWord);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+
